@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>login page for js</title>
+</head>
+<body>
+    <div class="wrap">
+   <nav>
+    <div class="head">
+        <p>register</p>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#" class="link active">Home</a></li>
+            <li><a href="#" class="link">Blog</a></li>
+            <li><a href="#" class="link">Services</a></li>
+            <li><a href="#" class="link">About</a></li>
+        </ul>
+    </div>
+    <div class="button">
+        <button class="btn white1" id="loginbtn" onclick="login()">login</button>
+        <button class="btn" id="sigupbtn" onclick="reg()">sigup</button>
+    </div>
+    <div class="menubtn">
+        <i class="fas fa-bars" onclick="mymenu()"></i>
+    </div>
+   </nav>
+   <!-- form box  -->
+<div class="formbox">
+    <!-- login   -->
+    <div class="login" id="log">
+        <div class="top">
+        <span>Don't Have an Account? <a href="#" onclick="reg()">login</a></span>
+        <header>login</header>
+    </div>
+    <div class="twoform">
+        <div class="inputbox">
+            <input type="email" class="file" placeholder="Email"> 
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="inputbox">
+            <input type="password" class="file" placeholder="password"> 
+            <i class="fa-solid fa-lock"></i>    
+         </div>
+        
+        <div class="inputbox">
+            <input type="submit" class="submit" value="submit" > 
+        </div>
+        <div class="twocol">
+            <div class="one">
+                <input type="checkbox" name="" id="referrercheck">
+                <label for="referrercheck">Remember me</label>
+            </div>
+            <div class="two">
+                <label for=""><a href="#">Trems & condition</a></label>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- reg  -->
+    <div class="reg" id="register">
+        <div class="top">
+        <span>Have an Account? <a href="#" onclick="login()">login</a></span>
+        <header>sigup</header>
+    </div>
+    <div class="twoform">
+        <div class="inputbox">
+            <input type="text" class="file" placeholder="FirstName"> 
+            <i class="fa-solid fa-user-large"></i>
+        </div>
+        <div class="inputbox">
+            <input type="text" class="file" placeholder="LastName"> 
+            <i class="fa-solid fa-user-large"></i>
+        </div>
+        <div class="inputbox">
+            <input type="password" class="file" placeholder="password"> 
+            <i class="fa-solid fa-lock"></i>        </div>
+        <div class="inputbox">
+            <input type="email" class="file" placeholder="Email"> 
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="inputbox">
+            <input type="submit" class="submit" value="submit" > 
+        </div>
+        <div class="twocol">
+            <div class="one">
+                <input type="checkbox" name="" id="referrercheck">
+                <label for="referrercheck">Remember me</label>
+            </div>
+            <div class="two">
+                <label for=""><a href="#">Trems & condition</a></label>
+            </div>
+        </div>
+    </div>
+</div>
+</div>                    
+</div>
+<script src="index.js">
+    
+</script>
+
+</body>
+</html>
