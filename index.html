@@ -34,7 +34,7 @@
     <!-- login   -->
     <div class="login" id="log">
         <div class="top">
-        <span>Don't Have an Account? <a href="#" onclick="reg()">login</a></span>
+        <span>Don't Have an Account? <a href="#" onclick="reg()">signup</a></span>
         <header>login</header>
     </div>
     <div class="twoform">
@@ -99,8 +99,34 @@
 </div>
 </div>                    
 </div>
-<script src="index.js">
+<!-- <script src="index.js">
     
+</script> -->
+<script>
+    var a =document.getElementById("loginbtn");
+  var b = document.getElementById("sigupbtn");
+  var x = document.getElementById("log");
+  var y =document.getElementById("register");
+
+  
+  
+  function login() {
+  x.style.left = "4px";
+  y.style.right="-520px";
+  a.className +=" white-btn";
+  b.className = "btn";
+}
+  function reg() {
+  x.style.left = "-520px";
+  y.style.right="4px";
+  b.className +=" white-btn";
+  a.className = "btn";
+}
+function mymenu() {
+  var menu = document.querySelector('nav .menu ul');
+  menu.classList.toggle('active');
+}
+
 </script>
 
 </body>
